@@ -1,0 +1,33 @@
+
+.chess-container {
+    gap: 1rem;
+}
+
+.cell {
+    display: flex;
+    width: calc((100% / 7) - 1rem);
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.font-size{
+    font-size: 14px;
+}
+
+.blu {
+    background-color: #1389b2;
+}
+
+.green {
+    background-color: #0cd6a1;
+}
+
+.yellow {
+    background-color: #ffd166;
+}
+
+.red {
+    background-color: #f0466f;
+}
