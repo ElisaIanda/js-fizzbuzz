@@ -1,23 +1,3 @@
-// const chessContainer = document.querySelector(".chess-container")
-// const totalCell = 10 * 10;
-
-
-
-// for (let i = 0; i < totalCell; i++){
-//     // const singleCell = ' <div class="chess-square"></div>' ;
-//     let singleCell = document.createElement("div"); 
-//     singleCell.classList.add("chess-square");
-//     singleCell.innerHTML = i.toString();
-    
-//     if(i % 2 === 0){
-//         singleCell.classList.add("bg-dark", "text-light")
-//     }
-
-    
-
-//     // chessContainer.innerHTML += singleCell;
-//     chessContainer.append(singleCell);
-// }
 
 const chessContainer = document.querySelector(".chess-container");
 
@@ -30,27 +10,28 @@ for (let i = 1; i <= 100; i++) {
     singleCell.innerHTML = i.toString();
 
     // Blocco IF 
-    if (i % 3 === 0) {  //è divisibile per 3
+    if (i % 3 === 0) {  
 
-
-        if (i % 5 === 0) {  //è divisibile anche per 5
-            console.log(i + " " + "FizzBuzz")   //Se è divisibile per entrambi stampo FizzBuzz
+        if (i % 5 === 0) {  
+            // console.log(i + " " + "FizzBuzz") stampo in console  
             singleCell.classList.add("red", "font-size");
             singleCell.innerHTML = "FizzBuzz";
         }
-        else { //se è divisibile solo per 3 stampo solo Fizz
-            console.log(i + " " + "Fizz")
+        else { 
+            // console.log(i + " " + "Fizz") stampo in console 
             singleCell.classList.add("green","font-size");
             singleCell.innerHTML = "Fizz";
         }
     }
+
     else if (i % 5 === 0) { 
-        console.log(i + " " + "Buzz") 
+        // console.log(i + " " + "Buzz") stampo in console 
         singleCell.classList.add("yellow","font-size");
         singleCell.innerHTML = "Buzz";
     }
-    else { //Se non è divisibile n'è per 3 n'è per 5 allora stampo i
-        console.log(i)
+
+    else { 
+        // console.log(i) stampo in console 
         singleCell.classList.add("blu","font-size");
     }
 
